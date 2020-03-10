@@ -1,0 +1,13 @@
+/* ===================== */
+/* BASIC SETUP */
+/* ===================== */
+
+body{
+	font-family: 'Titillium Web', sans-serif;
+}
+.box1{
+	background: red;
+}
+.box2{
+	background: green;
+}
