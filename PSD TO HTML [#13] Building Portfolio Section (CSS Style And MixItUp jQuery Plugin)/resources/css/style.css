@@ -1,0 +1,328 @@
+/* =============== */
+/* BASIC SETUP */
+/* =============== */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility; 
+    line-height: 1.3;
+    font-size: 1.6rem;
+}
+ul li{
+	list-style-type: none;
+}
+h1{
+	font-size: 4.2rem;
+	color: #fff;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+
+}
+/* =============== */
+/* REUSABLE COMPONENTS */
+/* =============== */
+.row{
+	max-width: 114rem;
+	margin: 0 auto;
+}
+section{
+	padding: 8rem 0;
+}
+h2{
+	font-size: 4rem;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 2rem;
+	color: #fff;
+	text-align: center;
+}
+h2::after{
+	content: "";
+	display: block;
+	height: .4rem;
+	background: #fff;
+	width: 8.5rem;
+	margin: auto;
+	margin-top: 2rem;
+	text-align: center;
+}
+h3{
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff;
+}
+.box{
+	padding: 1%;
+}
+.box p {
+	font-size: 1.6rem;
+	font-weight: 300;
+	margin-top: 2rem;
+	color: #fff;
+}
+
+
+ /*BUTTON*/
+.btn:link,
+.btn:visited,
+.btn {
+	background: #333;
+	border-bottom: .3rem solid #000;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 1.5rem 6rem;
+	border-radius: .3rem;
+	display: inline-block;
+	margin-top: 4.5rem;
+	font-size: 1.6rem;
+}
+/*Pragraph*/
+.little-description{
+	font-size: 1.8rem;
+	width: 60%;
+	margin-left: 20%;
+	line-height: 3rem;
+}
+
+/* =============== */
+/* HEADER SECTION */
+/* =============== */
+header{
+	background: linear-gradient(rgba(135, 80, 156, 0.9),rgba(135, 80, 156, 0.9)), url(img/hero-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 85vh;
+	position: relative;
+	background-attachment: fixed;
+}
+.logo{
+	height: 3.5rem;
+	width: auto;
+	margin-top: 3.5rem;
+	float: left;
+}
+/*MAIN NAVIGATION*/
+.main-nav{
+	float: right;
+	margin-top: 4rem;
+}
+.main-nav li{
+	display: inline-block;
+	margin-left: 1rem;
+}
+.main-nav li:first-child{
+	margin-left: 0;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: rgba(100, 58, 121, 0);
+	padding: .6rem 1.6rem;
+	border-radius: .3rem;
+	display: inline-block;
+	font-size: 1.6rem;
+	transition: .3s;
+}
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+	background: rgba(100, 58, 121, 1);
+}
+.main-nav li.active a{
+	background: rgba(100, 58, 121, 1);
+}
+.hero-text-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+} 
+.btn-hero:link,
+.btn-hero:visited{
+	background: #eb7d4b;
+	border-color: #c86a40;
+}
+/* =============== */
+/* SERVICES SECTION */
+/* =============== */
+.services-section{
+	color: #fff;
+	background:linear-gradient(rgba(23, 194, 164, 0.9),rgba(23, 194, 164, 0.9)), url(img/services-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	text-align: center;
+}
+.services-section h2::after{
+	background: #14a58c;
+}
+.services-icon{
+	height: 12rem;
+	margin-top: 4.5rem;
+	margin-bottom: 3.5rem;
+}
+/* =============== */
+/* TEAM SECTION */
+/* =============== */
+.team-section{
+	background:linear-gradient(rgba(231, 241, 248, 0.9),rgba(231, 241, 248, 0.9)), url(img/team-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	text-align: center;
+	background-attachment: fixed;
+}
+}
+.team-section h2{
+	color: #3c4761
+}
+.team-section p{
+	text-align: center;
+}
+.team-section h2::after{
+	content: "";
+	display: block;
+	height: .4rem;
+	background: #c8d9e5;
+	width: 8.5rem;
+	margin: auto;
+	margin-top: 2rem;
+	text-align: center;
+}
+.team-member{
+	margin-top: 4.5rem;
+	margin-bottom: 3.5rem;
+	height: 20rem;
+	width: 20rem;
+	border-radius: 50%;
+}
+.team-section h3{
+	color: #27283d;
+}
+.team-section h2{
+	color: #3c4761;
+}
+.role{
+	color: #30bae7;
+	font-size: 1.6rem;
+	text-transform: capitalize;
+	margin-top: .5rem;
+	display: inline-block;
+}
+.team-section .box p{
+	color: #3c4761;
+}
+.social-link{
+	margin-top: 4.5rem;
+
+}
+.social-link ul li{
+	display: inline-block;
+	margin: 0 .5rem;
+}
+.social-link ul li a{
+	color: #fff;
+}
+.social-link ul li a:link i::before{   
+	background: #bdd1df;
+	width: 2rem;
+	height: 2rem;
+	display:inline-block;
+	font-size: 2rem;
+	padding: 1rem;
+	border-radius: 50%;
+	transition: .5s;
+} 
+.social-link ul li a:hover i::before{
+	background: #393939;
+	transform: rotate(360deg);
+
+}
+/* =============== */
+/* SKILLS SECTION */
+/* =============== */
+.skill-section{
+	background: linear-gradient(rgba(231, 255, 255, 0.9), rgba(231, 255, 255, 0.9)), url(img/skill-bg.jpg);
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.skill-section h2,
+.skill-section h3{
+	color:  #3c4761;
+}
+.skill-section h2::after{
+	background: #dfe8ed;
+}
+.skill-section p{
+	color:  #3c4761;
+}
+.skill-section .box {
+	margin-top: 4.5rem;
+}
+svg.radial-progress circle{
+	stroke-width: 5;
+}
+svg.radial-progress text{
+	fill: #3c4761;
+	font-size: 1.5rem;
+}
+svg.web-design circle{
+	stroke: #30bae7;
+}
+svg.html-css circle{
+	stroke: #d74680;
+}
+svg.graphic-design circle{
+	stroke: #15c7a8;
+}
+svg.ui circle{
+	stroke: #eb7d4b;
+}
+/* =============== */
+/* PORTFOLIO SECTION */
+/* =============== */
+.portfolio-section{
+	background:linear-gradient(rgb(255, 221, 153, 0.9),rgba(255, 221, 153, 0.9)), url(img/portfolio-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	text-align: center;
+}
+.portfolio-section h2{
+	color: #3c4761;
+}
+.portfolio-section h2::after{
+	background: #e5c37f;
+}
+.portfolio-section button{
+	background: #ebc985;
+	font-size: 1.8rem;
+	padding: 1rem 2rem;
+	margin: 1.5rem 0;
+	border: 0;
+	border-radius: .5rem;
+	text-transform: uppercase;
+}
