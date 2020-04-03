@@ -399,3 +399,24 @@ svg.ui circle{
 .client-review .role{
 	color: #ffdd99;
 }
+/* =============== */
+/* CONTACT SECTION */
+/* =============== */
+.contact-section{
+	background: #3c5499;
+	text-align: center;
+}
+.contact-section h2::after{
+	background: #273a71;
+}
+.contact-section .little-description{
+	color: #fff;
+}
+.contact-section form{
+	margin-top: 5rem;
+}
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+	background: #273a71;
+}
