@@ -403,8 +403,11 @@ svg.ui circle{
 /* CONTACT SECTION */
 /* =============== */
 .contact-section{
-	background: #3c5499;
+	background: linear-gradient(rgba(60, 84, 153, 0.9),rgba(60, 84, 153, 0.9)),url(img/contact-bg.jpg);
 	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 .contact-section h2::after{
 	background: #273a71;
@@ -414,9 +417,36 @@ svg.ui circle{
 }
 .contact-section form{
 	margin-top: 5rem;
+	width: 70%;
+	margin: 15%;
+}
+.contact-section form{
+	margin-top: 5rem;
 }
 .contact-section input[type="text"],
 .contact-section input[type="email"],
 .contact-section textarea {
 	background: #273a71;
+	border: .1rem solid #273a71;
+	width: 100%;
+	padding: 1.5rem;
+	border-radius: .5rem;
+	font-size: 1.8rem;
+	color: #fff;
+	margin: .5rem 0;
+}
+.contact-section textarea{
+	height: 20rem;
+}
+.contact-section form ::placeholder{
+	color: #fff;
+	opacity: 1;
+}
+.btn-submit{
+	border: 0;
+	border-bottom:.3rem solid #299ec5;
+	background: #299ec5;
+}
+.btn-submit:hover {
+	cursor: pointer;
 }
