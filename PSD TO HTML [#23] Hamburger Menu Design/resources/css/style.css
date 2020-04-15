@@ -204,6 +204,48 @@ header{
 .mobile-menu span:hover{
 	cursor: pointer;
 }
+
+.overlay{
+	width: 0;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.9);
+	z-index: 1;
+	overflow-x: hidden;
+	transition: .5s;
+}
+.overlay-content{
+	position: relative;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+}
+.mobile-menu .overlay a{
+	text-decoration: none;
+	display: block;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	color: #999;
+	padding: 1rem 0;
+}
+.overlay a:hover
+{
+	color: #fff;
+}
+.overlay .closebtn{
+	position: absolute;
+	top: 2rem;
+	right: 4.5rem;
+	font-size: 6rem;
+}
+.sticky .mobile-menu span{
+	margin-top: 0;
+}
+
+
 /* =============== */
 /* SERVICES SECTION */
 /* =============== */
